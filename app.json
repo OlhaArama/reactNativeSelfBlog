@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "rn-self-posts",
+    "name": "Self Blog",
     "slug": "rn-self-posts",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,9 +13,19 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "bundleIdentifier": "com.olhadev.self-blog-rn-app",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.olhadev.self_blog_rn_app",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -23,6 +33,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a94fd804-9700-42b9-8ddb-d228d06147f8"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a94fd804-9700-42b9-8ddb-d228d06147f8"
     }
   }
 }
